@@ -2,15 +2,13 @@ def custom_islower(s):
     has_letter = False
     for char in s:
         if 'A' <= char <= 'Z':
-            return False  # Found an uppercase letter
+            return False 
         if 'a' <= char <= 'z':
-            has_letter = True  # At least one lowercase letter exists
-    return has_letter  # Return True only if there's at least one lowercase letter
+            has_letter = True  
+    return has_letter  
 
-# --- User Input ---
 text = input("Enter a string: ")
 
-# --- Result ---
 if custom_islower(text):
     print("All letters are lowercase.")
 else:
